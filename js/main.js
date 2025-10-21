@@ -59,7 +59,7 @@ class EvilCircle extends Shape {
     ctx.stroke();
   }
 
-  update() {
+  checkBounds() {
     if (this.x + this.size >= width) {
       this.x = width - this.size;
     }
@@ -165,12 +165,19 @@ while (balls.length < 25) {
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
+  const circle = new EvilCircle(width / 2, height / 2);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  circle.draw();
+  circle.checkBounds();
+  circle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
