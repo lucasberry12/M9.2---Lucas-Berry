@@ -190,3 +190,5 @@ function loop() {
 }
 
 loop();
+
+export { Shape, EvilCircle };
