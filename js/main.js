@@ -18,6 +18,9 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+const paragraph = document.querySelector("p");
+let ballCount = 0;
+
 class Shape {
   constructor(x, y, velX, velY) {
     this.x = x;
@@ -86,6 +89,8 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          ballCount--;
+          paragraph.textContent = `Ball count: ${ballCount}`;
         }
       }
     }
@@ -160,12 +165,14 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  ballCount++;
+  paragraph.textContent = `Ball count: ${ballCount}`;
 }
 
+const circle = new EvilCircle(width / 2, height / 2);
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
-  const circle = new EvilCircle(width / 2, height / 2);
 
   for (const ball of balls) {
     if (ball.exists) {
