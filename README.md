@@ -1,24 +1,26 @@
 # CS408 - Lab9.2
 
+Author: Lucas Berry
+
 ## Overview
 
-TODO: Write a project description
+This project is a modification of the already existing cs408-lab-9 repo, with
+modifications to enable the user to control a ball on the screen and play a game with it.
+The game is very similar to slither.io. The user can use the WASD keys to move the ball
+around and "eat" the other circles flying across the screen. In the top right there is a counter
+showing how many more balls are left in the game.
+
+To play the game start by typing this into the console:
+
+```
+npm install
+```
+
+After that, open the index.html file. From there you can play the game. To restart the game, simply close the tab and reopen it.
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
-
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Drawing_graphics
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Classes_in_JavaScript
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object-oriented_programming
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Video_and_audio_APIs
