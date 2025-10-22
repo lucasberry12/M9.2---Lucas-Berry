@@ -18,6 +18,8 @@ npm install
 
 After that, open the index.html file. From there you can play the game. To restart the game, simply close the tab and reopen it.
 
+To run the tests simply open the test.html file and run them from there. The game will appear behind the testing page, but this can be ignored.
+
 ## Sources and Credits
 
 - https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Drawing_graphics
