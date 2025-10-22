@@ -25,11 +25,11 @@ QUnit.module("EvilCircle", function () {
     assert.ok(circle.x > width, "Evil circle is out of bounds on x-axis");
     assert.ok(circle.y > height, "Evil circle is out of bounds on y-axis");
 
-    circle.x = -10;
-    circle.y = -10;
+    circle.x = -20;
+    circle.y = -20;
     circle.checkBounds();
-    assert.ok(circle.x < 0, "Evil circle is out of bounds on x-axis");
-    assert.ok(circle.y < 0, "Evil circle is out of bounds on y-axis");
+    assert.ok(circle.x == 10, "Evil circle is out of bounds on x-axis");
+    assert.ok(circle.y == 10, "Evil circle is out of bounds on y-axis");
 
     circle.x = 50;
     circle.y = 50;
